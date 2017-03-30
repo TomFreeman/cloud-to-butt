@@ -1,5 +1,3 @@
-walk(document.body);
-
 function walk(node) 
 {
 	// I stole this function from here:
@@ -7,8 +5,8 @@ function walk(node)
 	
 	var child, next;
 	
-	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
-	    || node.classList.indexOf('ace_editor') > -1) {
+	if (node.tagName && (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea')
+	    || (node.classlist && node.classList.contains('ace_editor'))) {
 		return;
 	}
 
@@ -41,7 +39,11 @@ function handleText(textNode)
 	v = v.replace(/\bthe Cloud\b/g, "my Butt");
 	v = v.replace(/\bthe cloud\b/g, "my butt");
 	
+	v = v.replace(/\bCloud\b/g, "Butt");
+	v = v.replace(/\bcloud\b/g, "butt");
+
 	textNode.nodeValue = v;
 }
 
 
+walk(document.body);
