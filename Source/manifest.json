@@ -13,9 +13,5 @@
     ],
     "description": "Replaces the text 'the cloud' with 'my butt'.",
     "name": "Cloud To Butt",
-    "version": "1.0",
-    "-ms-preload": {
-        "backgroundScript": "backgroundScriptsAPIBridge.js",
-        "contentScript": "contentScriptsAPIBridge.js"
-    }
+    "version": "1.0"
 }
