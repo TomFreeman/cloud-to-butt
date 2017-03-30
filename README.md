@@ -1,11 +1,11 @@
-cloud-to-butt
+cloud-to-butt-edge
 =============
 
 ![](logo.png)
 
-Chrome extension that replaces occurrences of 'the cloud' with 'my butt'
+Edge extension that replaces occurrences of 'the cloud' with 'my butt'
 
-[Direct download of crx file](https://github.com/panicsteve/cloud-to-butt/blob/master/CloudToButt.crx?raw=true)
+Base on: https://github.com/panicsteve/cloud-to-butt
 
 Note that there are forks of this extension that simply replace 'cloud' with 'butt'.
 In my personal opinion, that approach is too broad and it's less funny as a result, but it is clearly a very
@@ -19,7 +19,13 @@ http://www.flickr.com/groups/cloud-to-butt/
 Installation
 ------------
 
-In Chrome, choose Window > Extensions.  Drag CloudToButt.crx into the page that appears.
+In Edge - enable developer extensions in the about:flags page.
+Once you've restarted the browser, choose Extensions from the elipsis menu, click the load button and point it at the folder holding the source.
+
+Chrome Version
+--------------
+
+Can be found here: https://github.com/panicsteve/cloud-to-butt
 
 Safari Version
 --------------
